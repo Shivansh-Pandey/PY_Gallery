@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Pandey - More Work</title>
+    <link rel="stylesheet" href="./css/morework.css" />
+
+</head>
+
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="./portfolio/img1.png" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="./portfolio/img1.png " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img2.png " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img3.png " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img4.png " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img5.jpg " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img6.png " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img7.png " onclick="openFullImg(this.src)" />
+        <img src="./portfolio/img8.jpeg" onclick="openFullImg(this.src)" />
+        <!--- <img src="./portfolio/img2.png " />
+        <img src="./portfolio/img3.png " />
+        <img src="./portfolio/img4.png " />
+        <img src="./portfolio/img5.png " />
+        <img src="./portfolio/img6.png " />
+        <img src="./portfolio/img7.png " />
+        <img src="./portfolio/img8.png " />-->
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+
+
+
+</html>
